@@ -11,7 +11,7 @@ function StaggeringAnimation() {
         { value: 0.1, easing: "easeOutSine", duration: 500 },
         { value: 1, easing: "easeInOutQuad", duration: 1200 },
       ],
-      delay: anime.stagger(200, { grid: [11, 4], from: "center" }),
+      delay: anime.stagger(200, { grid: [3, 10], from: "center" }),
     });
     return anime;
   }
@@ -19,10 +19,7 @@ function StaggeringAnimation() {
   return (
     <>
       <div className="staggeringAnimation">
-        <div
-          class="staggering-content staggering-grid"
-          onMouseOver={handleOnClick}
-        >
+        <div class="staggering-content staggering-grid" onClick={handleOnClick}>
           <div class="grid-square">
             <div class="small square el"></div>
             <div class="small square el"></div>

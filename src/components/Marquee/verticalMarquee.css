@@ -1,5 +1,6 @@
 .marquee {
   grid-area: 2 / 1 / 13 / 2;
+  pointer-events: none;
 }
 
 .marquee p {
@@ -10,4 +11,5 @@
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
+  margin-left: 1rem;
 }
